@@ -1,0 +1,13 @@
+testConfig:
+  projectName: Foreign Currency Exchange Rates
+  type: cucumber #(junit,runmanager,cucumber)  #no default value , must provide
+  tags: "@login12" #(user,gaptest,FrameworkDemo,gap_mobile_checkout,@Regression)  no default value , must provide
+  execution: local #(remote ,local,docker) #defalut local
+  retryCount: 0
+cucumberConfig:
+  features: ./src/test/resources/Features
+  glue: com.application.tests
+  monochrome: false
+  dryRun: false
+  strict: false
+  plugins: "com.cucumber.listener.ExtentCucumberFormatter:"
